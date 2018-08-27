@@ -2,7 +2,6 @@ require 'json'
 require_relative 'car'
 
 class Main
-
   def self.execute(input_json)
     @input_data = JSON.parse(File.read(input_json))
     @cars_by_ids = @input_data['cars'].map do |car|
@@ -26,4 +25,3 @@ class Main
 
   private_class_method :serialize
 end
-

@@ -24,5 +24,4 @@ class Car
   def price_for_rental(rental)
     (rental.price_decreased_for_price(price_per_day) + rental.distance * price_per_km).to_i
   end
-
 end
